@@ -1,0 +1,46 @@
+%% plotting C-SET data
+
+%% Create data for startle, (threat, safe) vs. (far, near, unavoidable), half 1
+
+Y=[.45 -.19,
+    .48 .10,
+    .84 .27];
+bar( Y, 'grouped');
+
+%add errorbar
+E= [.41 .41,
+    .42 .33,
+    .70 .42];
+errorbar(Y, E);
+
+
+% Adjust the axis limits
+axis([0.5 3.5 -1 1.7]);
+
+% Add title and axis labels
+title('Threat-condition vs. Distance, half 1');
+xlabel('distance');
+ylabel('standardized eye-blink magnitude');
+
+
+%% Create data for startle, (threat, safe) vs. (far, near, unavoidable), half 2
+
+Z=[-.40 -.60,
+    -.17 -.62,
+    .22 -.48];
+bar( Z, 'grouped');
+
+%add errorbar
+D= [.28 .23,
+    .44 .38,
+    .38 .30];
+errorbar(Z, D);
+
+
+% Adjust the axis limits
+axis([0.5 3.5 -1 1.7]);
+
+% Add title and axis labels
+title('Threat-condition vs. Distance, half 2');
+xlabel('distance');
+ylabel('standardized eye-blink magnitude');
